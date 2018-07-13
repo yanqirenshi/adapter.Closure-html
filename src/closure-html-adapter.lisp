@@ -20,6 +20,8 @@
            ;;
            #:is-p
            #:is-a
+           #:is-b
+           #:is-title
            #:is-span
            #:is-div
            #:is-h1
@@ -32,6 +34,12 @@
 
 (defun is-a (tag)
   (eq :a (pt-name tag)))
+
+(defun is-b (tag)
+  (eq :b (pt-name tag)))
+
+(defun is-title (tag)
+  (eq :title (pt-name tag)))
 
 (defun is-p (tag)
   (eq :p (pt-name tag)))
